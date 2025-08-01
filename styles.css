@@ -1,0 +1,47 @@
+body{
+    font-family: 'ABCDED', sans-serif;
+    line-height: 1.6;
+}
+
+.nav-link{
+    color: #666 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,.nav-link:active{
+    color: var(--primary-color) !important;
+}
+
+.category-card{
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+    cursor: pointer;
+}
+
+/* Make navbar links black */
+.navbar-nav .nav-link {
+    color: #000 !important;
+}
+.category-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important ;
+    
+}
+
+
+
+.inbox-img-left {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 40vw;
+    object-fit: contain;
+}
+
+.inbox-img-right {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 35vw;
+    object-fit: contain;
+}

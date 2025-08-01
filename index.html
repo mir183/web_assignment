@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main title -->
+    <title>FoodieLand</title>
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font awesome CDNJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header fixed-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-dark" href="index.html">FoodieLand</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link activate" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate" href="#Recipies">Recipies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate" href="#Blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate" href="#Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate" href="#about">About us</a>
+                        </li>
+                    </ul>
+                    <div class="social-links d-none d-lg-flex">
+                        <a href="#" class="text-parimary me-3 fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-dark me-3 fs-5"><i class="fab fa-x-twitter   "></i></a>
+                        <a href="#" class="text-danger me-3 fs-5"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero section -->
+    <section class="hero bg-light py-5"  id="home" style="margin-top: 76px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3">
+                        <i class="fas fa-fire me-2"></i>Hot Recipies
+                    </span>
+                    <h1 class="display-4 fw-bold text-dark mb-3">Spicy delicious chicken wings</h1>
+                    <p class="lead text-dark mb-4">Side er jei murgi da dekhtasen, oida kaitai apnare khawano hoibo, this is to make sure what you will get is fresh organic and 100% Deshi murgi</p>
+                    
+                    <div class="d-flex gap-4 mb-4">
+                        <span class="text-muted">
+                            <i class="fas fa-clock text-danger me-2"></i>30 Minutes
+                        </span>
+                        <span class="text-muted">
+                            <i class="fas fa-utensils text-danger me-2"></i>Chicken
+                        </span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1732634260264-27441fcdf905?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                            alt="Kupa Joshim" class="rounded-circle" width="50" height="50">
+                            <div>
+                                <div class="fw-semibold text-dark">Kupa Joshim</div>
+                                <small class="text-muted">15 March 2022</small>
+                            </div>
+                            <button class="btn btn-dark rounded-3 ms-auto px-4">
+                                View Recipies <i class="fas fa-play ms-2"></i>
+                            </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1471623817296-aa07ae5c9f47?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Deshi Murgi" class="img-fluid rounded-4 shadow-lg">
+                        <div class="position-absolute top-0 end-0 m-3 bg-white rounded-circle d-flex align-items-center justify-content-center"
+                        style="width: 60px;height: 60px;">
+                        <i class=" fas fa-utensils text-danger fs-4"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- Catagories Section -->
+    <section class="categories py-5" id="recipies">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h2 class="display-5 fw-bold text-dark">Catagories</h2>
+                <button class="btn btn-danger rounded-3 px-4">View All Catagories</button>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm h-100 text-center category-card" style="background-color:  #EAFAFD";>
+                        <div class="card-body p-4">
+                            <div class="fs-1 mb-3">🍵</div>
+                            <h5 class="card-title fw-semibold">Breakfast</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm h-100 text-center category-card" style="background-color:  #EAFAFD";>
+                        <div class="card-body p-4">
+                            <div class="fs-1 mb-3">🥬</div>
+                            <h5 class="card-title fw-semibold">Healthy</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm h-100 text-center category-card" style="background-color:  #EAFAFD";>
+                        <div class="card-body p-4">
+                            <div class="fs-1 mb-3">🥩</div>
+                            <h5 class="card-title fw-semibold">Meat</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm h-100 text-center category-card" style="background-color:  #EAFAFD";>
+                        <div class="card-body p-4">
+                            <div class="fs-1 mb-3">🍰</div>
+                            <h5 class="card-title fw-semibold">Dessert</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm h-100 text-center category-card" style="background-color:  #EAFAFD";>
+                        <div class="card-body p-4">
+                            <div class="fs-1 mb-3">🥪</div>
+                            <h5 class="card-title fw-semibold">Lunch</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card border-0 shadow-sm h-100 text-center category-card" style="background-color:  #EAFAFD";>
+                        <div class="card-body p-4">
+                            <div class="fs-1 mb-3">🍫</div>
+                            <h5 class="card-title fw-semibold">Chocolate</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </section>
+
+
+    <!-- small block Section -->
+    <section>
+        <div class="text-center pt-5 container">
+            <h2 class="fw-semibold">Saradin khali khai ar khai</h2>
+            <p class="mt-3 w-50 mx-auto">Well Lorem ipsum keu pore o dekhe na, so ekhane kichu lekhte mon chaitese na !</p>
+        </div>
+    </section>
+
+
+    <!-- menu section -->
+        <section class="menu py-5" id="menu">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-dark text-center mb-5">Our Menu</h2>
+            <div class="row g-4">
+                <!-- Menu Item 1 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card border-0 shadow-sm h-100 flex-grow-1" style="background-color: #EAFAFD;">
+                        <img src="images/burger.jpg" 
+                            alt="Wagyu Beef Cheeseburger" class="card-img-top rounded-4" style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Big and Juicy Wagyu Beef Cheeseburger</h5>
+                            <p class="card-text text-muted mt-auto">30 Minutes | Snack</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card border-0 shadow-sm h-100 flex-grow-1" style="background-color: #EAFAFD;">
+                        <img src="images/salmon.jpg" 
+                            alt="Salmon with Ginger Sauce" class="card-img-top rounded-4" style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Fresh Lime Roasted Salmon with Ginger Sauce</h5>
+                            <p class="card-text text-muted mt-auto">30 Minutes | Fish</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card border-0 shadow-sm h-100 flex-grow-1" style="background-color: #EAFAFD;">
+                        <img src="images/pancake.jpg" 
+                            alt="Pancakes with Honey Syrup" class="card-img-top rounded-4" style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Strawberry Oatmeal Pancake with Honey Syrup</h5>
+                            <p class="card-text text-muted mt-auto">30 Minutes | Breakfast</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 4 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card border-0 shadow-sm h-100 flex-grow-1" style="background-color: #EAFAFD;">
+                        <img src="images/salad.jpg" 
+                            alt="Healthy Mixed Salad" class="card-img-top rounded-4" style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Fresh and Healthy Mixed Salad</h5>
+                            <p class="card-text text-muted mt-auto">20 Minutes | Healthy</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 5 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card border-0 shadow-sm h-100 flex-grow-1" style="background-color: #EAFAFD;">
+                        <img src="images/cmeatballs.jpg" 
+                            alt="Meatballs with Cream Cheese" class="card-img-top rounded-4" style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Chicken Meatballs with Cream Cheese</h5>
+                            <p class="card-text text-muted mt-auto">40 Minutes | Meat</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 6 -->
+                <div class="col-lg-4">
+                    <img src="images/Ads.png" alt="image" class="pg-primary img-fluid rounded">
+                </div>
+
+                <!-- Menu Item 7 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card border-0 shadow-sm h-100 flex-grow-1" style="background-color: #EAFAFD;">
+                        <img src="images/f_cake.jpg" 
+                            alt="Fruity Pancake" class="card-img-top rounded-4" style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Fruity Pancake with Orange & Blueberry</h5>
+                            <p class="card-text text-muted mt-auto">25 Minutes | Sweet</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 8 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card border-0 shadow-sm h-100 flex-grow-1" style="background-color: #EAFAFD;">
+                        <img src="images/p_chicken.jpg" 
+                            alt="Chicken and Rice" class="card-img-top rounded-4" style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">The Best Easy One Pot Chicken and Rice</h5>
+                            <p class="card-text text-muted mt-auto">35 Minutes | Rice</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 9 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card border-0 shadow-sm h-100 flex-grow-1" style="background-color: #EAFAFD;">
+                        <img src="images/c_desert.jpg" 
+                            alt="Chocolate Dessert" class="card-img-top rounded-4" style="height: 300px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">Decadent Chocolate Dessert</h5>
+                            <p class="card-text text-muted mt-auto">45 Minutes | Dessert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- inspiration section  -->
+    <section class="inspiration" style="background-color: white;" >
+        <div class="container" >
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-6">
+                    <h2 class="display-4 fw-bold">Everyone can be a chef in their own kitchen</h2>
+                    <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button class="btn btn-dark rounded-pill px-4 py-2">Learn More</button>
+                </div>
+                <!-- Image Content -->
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative">
+                        <img src="images/chef.jpg" alt="Chef" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- instagram section  -->
+        
+    <section class="instagram py-5" style="background-color: #f0f6fc;">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3 text-dark">Check out @foodieland on Instagram</h2>
+            <p class="text-dark mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="row g-4">
+                <!-- Instagram Post 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm">
+                        <img src="images/post1.png" alt="Instagram Post 1" class="card-img-top rounded-4">
+                    </div>
+                </div>
+                <!-- Instagram Post 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm">
+                        <img src="images/post2.png" alt="Instagram Post 2" class="card-img-top rounded-4">
+                    </div>
+                </div>
+                <!-- Instagram Post 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm">
+                        <img src="images/post3.png" alt="Instagram Post 3" class="card-img-top rounded-4">
+                    </div>
+                </div>
+                <!-- Instagram Post 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 shadow-sm">
+                        <img src="images/post4.png" alt="Instagram Post 4" class="card-img-top rounded-4">
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.instagram.com/foodieland" target="_blank" class="btn btn-dark rounded-pill px-4 py-2 mt-5">
+                Visit Our Instagram <i class="fab fa-instagram ms-2"></i>
+            </a>
+        </div>
+    </section>
+
+        <!-- Subscription Section  and footer -->
+        <section class="subscription py-5" style="background-color: #ffffff; border-radius: 20px; position: relative;">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-3">Ki? kono somossa?</h2>
+                <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="email" class="form-control rounded-pill px-4 py-2 me-3" placeholder="Your email address..." style="max-width: 400px;">
+                    <button class="btn btn-dark rounded-pill px-4 py-2">Subscribe</button>
+                </div>
+            </div>
+            <!-- Left Image -->
+            <img src="images/f1.png" alt="Left Decoration" class="inbox-img-left">
+            <!-- Right Image -->
+            <img src="images/f2.png" alt="Right Decoration" class="inbox-img-right">
+
+            <div class="container text-center mt-5">
+                <a href="index.html" class="navbar-brand fw-bold fs-3 text-dark ">Foodieland.</a>
+                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="#" class="text-dark me-3 fs-5"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-dark me-3 fs-5"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-dark fs-5"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" ...></script>
+</body>
+</html>
