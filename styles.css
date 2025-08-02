@@ -9,29 +9,15 @@ body{
     transition: color 0.3s ease;
 }
 
-<<<<<<< HEAD
-.nav-link:hover,.nav-link:active{
-    color: var(--primary-color) !important;
-}
-
-=======
->>>>>>> 2deef57 (final commit)
 .category-card{
     transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-/* Make navbar links black */
-.navbar-nav .nav-link {
-    color: #000 !important;
-}
-=======
 .navbar-nav .nav-link {
     color: #000 !important;
 }
 
->>>>>>> 2deef57 (final commit)
 .category-card:hover{
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important ;
