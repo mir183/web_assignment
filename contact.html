@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main title -->
+    <title>FoodieLand</title>
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font awesome CDNJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header fixed-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-dark" href="index.html">FoodieLand</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link activate" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate" href="#Recipies">Recipies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate" href="#Blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate" href="#Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate" href="#about">About us</a>
+                        </li>
+                    </ul>
+                    <div class="social-links d-none d-lg-flex">
+                        <a href="#" class="text-parimary me-3 fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-dark me-3 fs-5"><i class="fab fa-x-twitter   "></i></a>
+                        <a href="#" class="text-danger me-3 fs-5"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Contact Section -->
+        <section class="contact-section py-5 mt-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact us</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="images/cpcheif.png" alt="Chef" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name...">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your email address...">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Enter subject...">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="enquiry" class="form-label">Enquiry Type</label>
+                                <select class="form-select" id="enquiry">
+                                    <option value="advertising">Advertising</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="support">Support</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Messages</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your messages..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section  -->
+        <section class="subscription py-5" style="background-color: #ffffff; border-radius: 20px; position: relative;">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-3">Ki? kono somossa?</h2>
+                <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="email" class="form-control rounded-pill px-4 py-2 me-3" placeholder="Your email address..." style="max-width: 400px;">
+                    <button class="btn btn-dark rounded-pill px-4 py-2">Subscribe</button>
+                </div>
+                <p class="text-muted mb-4 mt-3">Subscribe to our newsletter for the latest updates!  </p>
+            </div>
+        </section>
+
+
+        <!-- contact page recipe section  -->
+
+                <section class="recipes-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-4 fw-bold">Check out the delicious recipe</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm" style="background-color: #EAFAFD;">
+                            <img src="images/cpr1.png" alt="Recipe 1" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Mixed Tropical Fruit Salad with Superfood Boosts</h5>
+                                <p class="text-muted mb-2">
+                                    <i class="fas fa-clock"></i> 30 Minutes &nbsp; 
+                                    <i class="fas fa-utensils"></i> Healthy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm" style="background-color: #EAFAFD;">
+                            <img src="images/cpr2.png" alt="Recipe 2" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Big and Juicy Wagyu Beef Cheeseburger</h5>
+                                <p class="text-muted mb-2">
+                                    <i class="fas fa-clock"></i> 30 Minutes &nbsp; 
+                                    <i class="fas fa-utensils"></i> Western
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"> 
+                        <div class="card border-0 shadow-sm" style="background-color: #EAFAFD;">
+                            <img src="images/cpr3.png" alt="Recipe 3" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Healthy Japanese Fried Rice with Asparagus</h5>
+                                <p class="text-muted mb-2">
+                                    <i class="fas fa-clock"></i> 30 Minutes &nbsp; 
+                                    <i class="fas fa-utensils"></i> Healthy
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm" style="background-color: #EAFAFD;">
+                            <img src="images/cpr4.png" alt="Recipe 4" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Cauliflower Walnut Vegetarian Taco Meat</h5>
+                                <p class="text-muted mb-2">
+                                    <i class="fas fa-clock"></i> 30 Minutes &nbsp; 
+                                    <i class="fas fa-utensils"></i> Eastern
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer  -->
+                <footer class="py-4">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div>
+                    <a class="navbar-brand fw-bold fs-3 text-dark" href="index.html">Foodieland</a>
+                    <p class="text-muted mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                </div>
+                <div>
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li class="ms-3"><a class="text-dark text-decoration-none" href="#Recipies">Recipes</a></li>
+                        <li class="ms-3"><a class="text-dark text-decoration-none" href="#Blog">Blog</a></li>
+                        <li class="ms-3"><a class="text-dark text-decoration-none" href="contact.html">Contact</a></li>
+                        <li class="ms-3"><a class="text-dark text-decoration-none" href="#about">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" ...></script>
+</body>
+</html>
